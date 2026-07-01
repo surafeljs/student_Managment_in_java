@@ -10,12 +10,14 @@ public class Main {
 
 
        Scanner scanner =new Scanner(System.in);
-          int usaerInput=scanner.nextInt();
        
 
-         int value=usaerInput;
-         scanner.close();
-                      switch (value) {
+       
+
+        System.out.println("Enter your choice: ");
+          int usaerInput=scanner.nextInt();
+
+                      switch (usaerInput) {
                         case 1:
                     System.out.println("\n");
 
@@ -23,7 +25,8 @@ public class Main {
                             break;
                       
                         default:
-                            break;
+                           System.out.println("Invalid choice!");
+                           scanner.close();
                       }
 
 
